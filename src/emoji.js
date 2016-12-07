@@ -1,4 +1,4 @@
-{
+module.exports = {
   "grinning": {
     "keywords": ["face", "smile", "happy", "joy", ":D", "grin"],
     "char": "😀",
