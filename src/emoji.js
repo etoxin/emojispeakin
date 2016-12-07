@@ -4075,7 +4075,7 @@ module.exports = {
     "category": "symbols"
   },
   "u6709": {
-    "keywords": ["orange-square", "chinese", "have", "kanji"],
+    "keywords": ["orange-square", "chinese", "kanji"],
     "char": "🈶",
     "category": "symbols"
   },

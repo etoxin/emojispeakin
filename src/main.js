@@ -60,7 +60,7 @@ class TranslateToEmoji {
         if(_.isString(transcript) && !_.isUndefined(transcript)) {
 
             // first split the transcript up into an array spliting spaces.
-            const transcriptArray = transcript.split(/\W/);
+            const transcriptArray = transcript.split(" ");
             var translatedArray = [];
 
             console.log(emoji.grinning.char);
@@ -86,27 +86,16 @@ class TranslateToEmoji {
                  } else if (potentials.length === 1) {
                      translatedArray[index] = potentials[0].char;
                  } else if (potentials.length > 1) {
-
                      var itemToChoose = _.random(potentials.length);
-
-                     translatedArray[index] = potentials[itemToChoose].char
+                     translatedArray[index] = potentials[itemToChoose--].char
                  }
-
-
-
-                 // transcriptArray[index] =
-//
-
              });
 
-             // if many random that
+            var sentence = translatedArray.join(" ");
 
-             // replace
-
-             // reconstruct
-
-            console.log('translatedArray', translatedArray);
-
+            console.log(sentence);
+            var dom = document.getElementById('dom');
+            dom.innerText = sentence;
         }
     }
 
